@@ -1,0 +1,50 @@
+.wordcontainer {
+
+    font-size: 100px;
+    letter-spacing: 40px;
+    text-align: center;
+    font-family: 'Courgette', cursive;
+    
+}
+
+.flex-box-container {
+    display: flex;
+    font-size: 50px;
+    flex-direction: row;
+    font-family: 'Courgette', cursive;
+}
+
+.scorebox {
+    display: flex;
+    flex:1;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Courgette', cursive;
+
+}
+
+.hangmancontainer {
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+    
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Courgette', cursive;
+}
+
+.control{
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+    font-family: 'Courgette', cursive;
+    
+}
+
+html {
+    background-image: url('/Photos/back.jpg');
+    background-size: 100% 100%;
+}

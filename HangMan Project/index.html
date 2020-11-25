@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <title>Hangman Game</title>
+</head>
+<body>
+    <h1>HANGMAN</h1>
+    <div class="control">
+        <div id="play">
+        <button type="button" onclick="generateWord()">Play</button>
+        </div>
+        <div id="userinput">
+            <form style="display:none" id="usercontrols" onkeydown="return event.key != 'Enter';"> 
+                <label>Input your letter here: </label>
+                <input id="letter" for="letter" type="text" maxlength="1" required>
+                <button class="control2" id="clickbutton" type="button" onclick="checkWord()" >Try Letter</button>
+        </form>
+    </div>
+        <div id="userinput2">
+         
+        </div>
+    </div>
+    <div id="word" class="wordcontainer"></div>
+    <div id="chances" class="hangmancontainer"></div>
+    <div id="scores" class="flex-box-container">
+        <div class="scorebox">Your Score</div>
+        <div id="result" class="scorebox"></div>
+        <div class="scorebox">Computer Score</div>
+        
+    </div>
+    <div id="scores" class="flex-box-container">
+        <div id="userscore" class="scorebox">0</div>
+        <div id="computerscore" class="scorebox">0</div>
+    </div>
+    
+</body>
+<script src="javascript.js"></script>
+</html>
